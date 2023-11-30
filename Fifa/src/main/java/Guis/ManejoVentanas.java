@@ -1,19 +1,26 @@
 package Guis;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class ManejoVentanas {
 
     public static void abrirVentanaPrincipal() {
-        X y = new y();
-        y.setSize(400, 300);
-        y.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        y.setLocationRelativeTo(null);
-        y.setVisible(true);
+        GuiTeams guiTeams = new GuiTeams();
+        guiTeams.setSize(400, 300);
+        guiTeams.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        guiTeams.setLocationRelativeTo(null);
+        guiTeams.setVisible(true);
     }
-    public static void mostrarBandera(String rutaImagen, JLabel labelBandera) {
-        ImageIcon icon = new ImageIcon(rutaImagen);
-        labelBandera.setIcon(icon);
+
+    public static void abrirVentanaInfo(String rutaBandera,String rutaDatos, String pais, int rank) {
+
+        GuiInfoEquipo guiInfoEquipo= new GuiInfoEquipo(rutaBandera,pais,rank);
+        guiInfoEquipo.setSize(400, 300);
+        guiInfoEquipo.setLocationRelativeTo(null);
+        guiInfoEquipo.setVisible(true);
     }
+
+
 }
 

@@ -2,9 +2,9 @@ package Main;
 
 public class Launcher {
 
-	public void main() {
-		// TODO - implement Launcher.main
-		throw new UnsupportedOperationException();
-	}
+	public static void main(String[] args) {
 
+		Guis.ManejoVentanas.abrirVentanaPrincipal();
+	}
 }
+
